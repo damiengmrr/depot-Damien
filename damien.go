@@ -10,6 +10,9 @@ func plus_one(n int) int {
     return n + 1
 }
 
+func identity(n int) int {
+	return n
+}
 
 func max(a,b int) int {
 	if a>b {
@@ -19,19 +22,7 @@ func max(a,b int) int {
 	}
 }
 
-func max3(a int,b int,c int) int {
-	if a>b {
-		max_ab = a // donc a>b
-	} else {
-		max_ab = b // donc b>a
-	}
-	if max_ab > c {
-		return max_ab // car "A" ou "B" est > a "C"
-	} else {
-		return c // c est > a "A" et "B"
-	}
 
-}
 
 func difference(a,b int) int {
 if a > b {
@@ -45,6 +36,9 @@ if a > b {
 
 func main() {
 	fmt.Println(zero())
-	fmt.Println(max3(2,3,4))
+//	fmt.Println(max3(2,3,4))
 	fmt.Println(max(2,3))
+	fmt.Println(difference(1,2))
+	fmt.Println(plus_one(3))
+	fmt.Println(identity(3))
 }
