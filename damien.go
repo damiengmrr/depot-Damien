@@ -6,6 +6,10 @@ func zero() int {
 	return 0
 }
 
+func plus_one(n int) int {
+    return n + 1
+}
+
 
 func max(a,b int) int {
 	if a>b {
@@ -27,6 +31,16 @@ func max3(a int,b int,c int) int {
 		return c // c est > a "A" et "B"
 	}
 
+}
+
+func difference(a,b int) int {
+if a > b {
+	 
+	 return a-b 
+} else {
+	  
+	  return b-a 
+ }
 }
 
 func main() {
